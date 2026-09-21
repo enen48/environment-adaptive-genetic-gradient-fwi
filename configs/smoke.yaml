@@ -1,0 +1,17 @@
+extends: configs/inversion.yaml
+generations: 3
+shape: [16, 16]
+output: outputs/smoke
+physics:
+  nt: 100
+  n_sources: 1
+  n_receivers: 5
+  pml_width: 3
+environment_overrides:
+  population_target_size: [6, 4]
+  local_fwi_steps: [1, 1]
+  injection_count: [1, 1]
+local_fwi:
+  top_k: 1
+stopping:
+  patience: 10

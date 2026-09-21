@@ -1,0 +1,8 @@
+extends: configs/ae.yaml
+data:
+  path: data/sample/openfwi_flatvel_a_train.npy
+  validation_path: data/sample/openfwi_flatvel_a_val.npy
+  shape: [70, 70]
+  velocity_min: 1500.0
+  velocity_max: 4500.0
+output: checkpoints/openfwi

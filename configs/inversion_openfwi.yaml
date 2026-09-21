@@ -1,0 +1,12 @@
+extends: configs/smoke.yaml
+checkpoint: checkpoints/openfwi/autoencoder.pt
+bank: checkpoints/openfwi/zbank.pt
+output: outputs/openfwi_smoke
+shape: [70, 70]
+truth_path: data/sample/openfwi_flatvel_a_val.npy
+truth_index: 0
+physics:
+  nt: 300
+  n_sources: 2
+  n_receivers: 16
+  pml_width: 12

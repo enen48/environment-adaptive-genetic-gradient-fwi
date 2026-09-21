@@ -1,0 +1,4 @@
+inversion_config: configs/smoke.yaml
+seeds: [43, 44, 45]
+variants: [gradient, latent_ga, ga_local, ga_bank_static, full, no_qc, no_local, no_dynamic]
+output: outputs/experiments

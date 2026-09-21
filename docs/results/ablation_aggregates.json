@@ -1,0 +1,98 @@
+[
+  {
+    "variant": "gradient",
+    "n": 3,
+    "waveform_misfit_mean": 0.023071179787317913,
+    "waveform_misfit_std": 0.02646927783439517,
+    "velocity_rmse_mean": 604.8132527669271,
+    "velocity_rmse_std": 118.04596568743457,
+    "pde_evaluations_mean": 9.0,
+    "pde_evaluations_std": 0.0,
+    "runtime_seconds_mean": 0.6133341333285595,
+    "runtime_seconds_std": 0.19420077901916194
+  },
+  {
+    "variant": "latent_ga",
+    "n": 3,
+    "waveform_misfit_mean": 0.02889778899649779,
+    "waveform_misfit_std": 0.040688161641697515,
+    "velocity_rmse_mean": 575.9485982259115,
+    "velocity_rmse_std": 131.65828296697302,
+    "pde_evaluations_mean": 13.0,
+    "pde_evaluations_std": 0.0,
+    "runtime_seconds_mean": 0.49658363333825645,
+    "runtime_seconds_std": 0.021556686713430705
+  },
+  {
+    "variant": "ga_local",
+    "n": 3,
+    "waveform_misfit_mean": 0.007542501009690265,
+    "waveform_misfit_std": 0.007975851743820015,
+    "velocity_rmse_mean": 442.27928670247394,
+    "velocity_rmse_std": 99.1710950777552,
+    "pde_evaluations_mean": 32.666666666666664,
+    "pde_evaluations_std": 0.5773502691896258,
+    "runtime_seconds_mean": 0.817392666649539,
+    "runtime_seconds_std": 0.017966654210748178
+  },
+  {
+    "variant": "ga_bank_static",
+    "n": 3,
+    "waveform_misfit_mean": 0.029429628668973844,
+    "waveform_misfit_std": 0.04061806422405365,
+    "velocity_rmse_mean": 588.5257975260416,
+    "velocity_rmse_std": 106.96070008304018,
+    "pde_evaluations_mean": 13.0,
+    "pde_evaluations_std": 0.0,
+    "runtime_seconds_mean": 0.5367937333454998,
+    "runtime_seconds_std": 0.02163893087040421
+  },
+  {
+    "variant": "full",
+    "n": 3,
+    "waveform_misfit_mean": 0.007542501009690265,
+    "waveform_misfit_std": 0.007975851743820015,
+    "velocity_rmse_mean": 442.27928670247394,
+    "velocity_rmse_std": 99.1710950777552,
+    "pde_evaluations_mean": 33.0,
+    "pde_evaluations_std": 0.0,
+    "runtime_seconds_mean": 0.9237888666684739,
+    "runtime_seconds_std": 0.05452043018295484
+  },
+  {
+    "variant": "no_qc",
+    "n": 3,
+    "waveform_misfit_mean": 0.007542501009690265,
+    "waveform_misfit_std": 0.007975851743820015,
+    "velocity_rmse_mean": 442.27928670247394,
+    "velocity_rmse_std": 99.1710950777552,
+    "pde_evaluations_mean": 33.0,
+    "pde_evaluations_std": 0.0,
+    "runtime_seconds_mean": 0.8665851999733908,
+    "runtime_seconds_std": 0.003945942511749035
+  },
+  {
+    "variant": "no_local",
+    "n": 3,
+    "waveform_misfit_mean": 0.015567377985765537,
+    "waveform_misfit_std": 0.01723427323134921,
+    "velocity_rmse_mean": 449.6786193847656,
+    "velocity_rmse_std": 136.03401255713212,
+    "pde_evaluations_mean": 27.0,
+    "pde_evaluations_std": 0.0,
+    "runtime_seconds_mean": 0.6945136000285856,
+    "runtime_seconds_std": 0.006546605212390338
+  },
+  {
+    "variant": "no_dynamic",
+    "n": 3,
+    "waveform_misfit_mean": 0.01076784466082851,
+    "waveform_misfit_std": 0.008330898551495285,
+    "velocity_rmse_mean": 546.1308085123698,
+    "velocity_rmse_std": 110.48312241295737,
+    "pde_evaluations_mean": 19.0,
+    "pde_evaluations_std": 0.0,
+    "runtime_seconds_mean": 0.6723487666458823,
+    "runtime_seconds_std": 0.004973391451769722
+  }
+]

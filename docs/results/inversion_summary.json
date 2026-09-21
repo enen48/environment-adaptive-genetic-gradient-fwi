@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "stop_reason": "max_generations",
+  "generations_completed": 30,
+  "best_reference_fitness": 0.005232309456914663,
+  "initial_reference_fitness": 0.18742689490318298,
+  "waveform_misfit": 0.005048623774200678,
+  "pde_evaluations": 1305,
+  "calls": 1305,
+  "model_evaluations": 1305,
+  "shot_evaluations": 2610,
+  "observation_pde_evaluations": 1,
+  "qc_rejected": 8,
+  "qc_rejection_reasons": {
+    "latent_cycle": 8
+  },
+  "injection_count": 4,
+  "accepted_injection_count": 4,
+  "successful_injection_count": 0,
+  "runtime_seconds": 56.75763559999177,
+  "device": "cpu",
+  "velocity_bounds": [
+    1500.0,
+    4500.0
+  ],
+  "metrics": {
+    "velocity_mae": 361.6956481933594,
+    "velocity_rmse": 535.5328979492188,
+    "relative_l2": 0.17964915931224823,
+    "ssim": 0.6209559440612793
+  },
+  "initial_velocity_metrics": {
+    "velocity_mae": 577.9220581054688,
+    "velocity_rmse": 603.173583984375,
+    "relative_l2": 0.2023397833108902,
+    "ssim": 0.5705851912498474
+  }
+}

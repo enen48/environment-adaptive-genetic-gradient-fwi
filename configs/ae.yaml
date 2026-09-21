@@ -1,0 +1,20 @@
+seed: 42
+device: auto
+threads: 2
+data:
+  path: null
+  samples: 96
+  validation_samples: 16
+  shape: [32, 32]
+  velocity_min: 1500.0
+  velocity_max: 4500.0
+model:
+  latent_dim: 32
+  channels: 16
+training:
+  epochs: 8
+  batch_size: 16
+  learning_rate: 0.002
+  smoothness_weight: 0.0001
+  latent_weight: 0.00001
+output: checkpoints

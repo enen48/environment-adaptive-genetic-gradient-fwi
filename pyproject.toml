@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "environment-adaptive-genetic-gradient-fwi"
+version = "0.1.0"
+description = "Reproducible latent genetic-gradient acoustic FWI research framework"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "numpy>=1.24", "PyYAML>=6", "matplotlib>=3.7", "scipy>=1.10", "requests>=2.31"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

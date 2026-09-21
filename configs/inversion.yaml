@@ -1,0 +1,67 @@
+seed: 43
+device: auto
+threads: 2
+checkpoint: checkpoints/autoencoder.pt
+bank: checkpoints/zbank.pt
+output: outputs/inversion
+environment_config: configs/environment.yaml
+generations: 30
+shape: [32, 32]
+observed_path: null
+truth_path: null
+physics:
+  dx: 10.0
+  dt: 0.001
+  nt: 180
+  source_frequency: 12.0
+  source_amplitude: 1.0
+  source_delay: 0.06
+  n_sources: 2
+  n_receivers: 12
+  pml_width: 6
+  damping: 0.18
+frequency:
+  bands: [[0.5, 6.0], [5.0, 11.0], [10.0, 20.0]]
+  filter: smooth
+  transition: 2.0
+ga:
+  selection: tournament
+  tournament_size: 3
+  crossover: blend
+  blend_alpha: 0.2
+  latent_clip: 6.0
+local_fwi:
+  enabled: true
+  top_k: 3
+  optimizer: Adam
+  learning_rate: 0.03
+zbank:
+  enabled: true
+  capacity: 128
+  max_injection: 3
+  fitness_weight: 1.0
+  diversity_weight: 1.0
+  environment_weight: 0.5
+qc:
+  enabled: true
+  mode: hard
+  threshold: 4.0
+  percentile: 95.0
+  min_threshold: 0.1
+  velocity_min: 1500.0
+  velocity_max: 4500.0
+  max_gradient: 1500.0
+  vertical_smoothness: 1000.0
+  tv_threshold: null
+  monotonic: false
+dynamic_environment: true
+diversity:
+  metric: pairwise
+  normalize: true
+stopping:
+  target: 0.000001
+  epsilon: 0.000001
+  patience: 12
+  min_progress: 0.6
+  failed_injections: 5
+  validation_threshold: null
